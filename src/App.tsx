@@ -1,5 +1,13 @@
-function App() {
-  return <h1>Task Rabbit</h1>;
-}
+import { Outlet } from 'react-router-dom';
+import AppBar from './components/app-bar/app-bar.component';
+
+const App = () => {
+  return (
+    <>
+      <AppBar />
+      <Outlet />
+    </>
+  );
+};
 
 export default App;

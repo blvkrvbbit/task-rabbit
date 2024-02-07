@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: 'Recursive', sans-serif;
+}
+
+@layer components {
+  .app-bar {
+    @apply container mx-auto py-5;
+  }
+  .navbar-brand {
+    @apply font-medium tracking-wide text-xl;
+  }
+  .btn {
+    @apply text-base px-6 py-2 block mt-6;
+  }
+  .primary-btn {
+    background-color: #60ff46;
+    color: #4b4b4b;
+  }
+  .delete-btn {
+    background-color: red;
+    color: #fff;
+  }
+}

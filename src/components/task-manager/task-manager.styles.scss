@@ -1,0 +1,37 @@
+.task-list {
+  .task:nth-of-type(odd) {
+    background: #4f80ff;
+    color: #fff;
+  }
+  .task:nth-of-type(even) {
+    border-bottom: 0.1rem solid #4f80ff;
+  }
+  .chevron-down {
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .chevron-down-rotate {
+    transform: rotate(180deg);
+  }
+
+  .controls {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+  }
+
+  .controls-open {
+    max-height: 8rem;
+  }
+}
+
+.create-form {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s;
+}
+
+.create-form-open {
+  max-height: 8rem;
+}
